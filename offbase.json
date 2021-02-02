@@ -4,7 +4,7 @@
   },
   "lib": {
     "theme": {
-      "url": "https://github.com/offbaseorg/offpress-theme-dark.git"
+      "url": "https://github.com/offbaseorg/offpress-theme-default.git"
     },
     "settings": {
       "url": "https://github.com/offbaseorg/offpress-plugin-settings.git"
