@@ -1,0 +1,64 @@
+{
+  "bin": {
+    "url": "https://github.com/offbaseorg/offpress.git"
+  },
+  "lib": {
+    "theme": {
+      "url": "https://github.com/offbaseorg/default-theme.git"
+    },
+    "rss": {
+      "url": "https://github.com/offbaseorg/rss-plugin.git"
+    },
+    "settings": {
+      "url": "https://github.com/fingertwiddler/settings-plugin.git"
+    }
+  },
+  "trigger": {
+    "onpublish": [
+      "/plugin/theme/onpublish",
+      "/plugin/rss/onpublish"
+    ],
+    "onsave": [
+      "/plugin/theme/onsave"
+    ]
+  },
+  "settings": {
+    "SRC": "/home/src",
+    "DEST": "/home/blog",
+    "NAME": "Offpress",
+    "THEME": {
+      "HOME": "/lib/theme/index.hbs",
+      "POST": "/lib/theme/post.hbs"
+    },
+    "PAGE": {
+      "CHUNK": 6
+    },
+    "FEED": {
+      "BASE": "",
+      "CHUNK": 10
+    }
+  },
+  "customize": [{ 
+    "path": "settings.NAME",
+    "label": "Blog name"
+  }, {
+    "path": "settings.PAGE.CHUNK",
+    "label": "Items per page",
+    "type": "number"
+  }, {
+    "path": "settings.FEED.BASE",
+    "label": "RSS Feed base URL"
+  }, {
+    "path": "settings.FEED.CHUNK",
+    "label": "Number of posts in the RSS feed"
+  }, {
+    "path": "lib.theme.url",
+    "label": "theme component git URL (/lib/theme)"
+  }, {
+    "path": "bin.url",
+    "label": "bin component git URL (/bin)"
+  }, {
+    "path": "lib.settings.url",
+    "label": "settings component git url (/lib/theme)"
+  }]
+}
