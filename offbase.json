@@ -19,18 +19,15 @@
     ]
   },
   "settings": {
+    "BASE": "",
     "SRC": "/home/src",
     "DEST": "/home/blog",
     "NAME": "Offpress",
-    "THEME": {
-      "HOME": "/lib/theme/index.hbs",
-      "POST": "/lib/theme/post.hbs"
-    },
+    "THEME": "/lib/theme",
     "PAGE": {
       "CHUNK": 6
     },
     "FEED": {
-      "BASE": "",
       "CHUNK": 10
     }
   },
@@ -42,8 +39,8 @@
     "label": "Items per page",
     "type": "number"
   }, {
-    "path": "settings.FEED.BASE",
-    "label": "RSS Feed base URL"
+    "path": "settings.BASE",
+    "label": "Website base URL (Must end with /, for example: https://blog.offpress.app/)"
   }, {
     "path": "settings.FEED.CHUNK",
     "label": "Number of posts in the RSS feed"
